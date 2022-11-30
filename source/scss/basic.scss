@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #8F8F8F;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: $basicText;
+    background-color: $basicBgColor;
+    max-width: $mobile;
+    margin: 0 auto;
+
+
+    @media (min-width: $desktop) {
+        max-width: $desktop;
+    }
+}
+
 a {
     text-decoration: none;
 }
 
 ul, ol {
     list-style-type: none;
-}
-
-body {
-    font-family: Helvetica, sans-serif;
-    color: $basicText;
 }
 
 h1 {
@@ -27,4 +39,30 @@ h2 {
 
 h3 {
     @include h3Font;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-container {
+    width: 288px;
+    margin: 0 auto;
+
+    @media (min-width: $desktop) {
+        width: 1200px;
+    }
 }

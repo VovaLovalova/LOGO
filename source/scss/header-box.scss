@@ -1,0 +1,46 @@
+.header-box {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.header-box__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 80px;
+}
+
+.header-box__user-button {
+    width: 28px;
+    height: 23px;
+    padding: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.header-box__nav-button {
+    width: 32px;
+    height: 23px;
+    padding: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+}

@@ -5,17 +5,29 @@
           box-sizing: border-box;
 }
 
+html {
+  background-color: #8F8F8F;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  max-width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 1600px) {
+  body {
+    max-width: 1600px;
+  }
+}
+
 a {
   text-decoration: none;
 }
 
 ul, ol {
   list-style-type: none;
-}
-
-body {
-  font-family: Helvetica, sans-serif;
-  color: #000000;
 }
 
 h1 {
@@ -37,4 +49,115 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  width: 288px;
+  margin: 0 auto;
+}
+@media (min-width: 1600px) {
+  .main-container {
+    width: 1200px;
+  }
+}
+
+.header-box {
+  min-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 16px;
+}
+
+.header-box__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 80px;
+}
+
+.header-box__user-button {
+  width: 28px;
+  height: 23px;
+  padding: 13px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.header-box__user-button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-box__nav-button {
+  width: 32px;
+  height: 23px;
+  padding: 13px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.header-box__nav-button img {
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.site-list__item {
+  padding: 16px;
+  border-bottom: 2px solid #f1f1f1;
+  width: 320px;
+  padding: 16px;
+  text-align: center;
+}
+
+.site-list__link {
+  padding: 16px auto;
+  color: #000000;
+}
+
+.user-list__item {
+  padding: 16px;
+  border-bottom: 2px solid #f1f1f1;
+  width: 320px;
+  padding: 16px;
+  text-align: center;
+}
+
+.user-list__link {
+  padding: 16px auto;
+  color: #000000;
 }
