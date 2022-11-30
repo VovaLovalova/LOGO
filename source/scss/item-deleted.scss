@@ -1,0 +1,61 @@
+.item-deleted {
+    background-color: $secondBgColor;
+    margin-bottom: 16px;
+    padding: 12px 32px 12px 8px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.item-deleted__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $secondText;
+    margin-bottom: 4px;
+
+    .item-deleted__name {
+        font-weight: 600;
+    }
+}
+
+.item-deleted__delete-button {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 18.5px;
+        height: 1.5px;
+        background-color: black;
+        transform: rotate(45deg);
+        top: 5px;
+        right: -2px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 18.5px;
+        height: 1.5px;
+        background-color: black;
+        transform: rotate(-45deg);
+        top: 5px;
+        right: -2px;
+    }
+}
+
+.item-deleted__recover-button {
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $basicText;
+    cursor: pointer;
+}

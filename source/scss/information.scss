@@ -1,0 +1,23 @@
+.information {
+    margin-bottom: 16px;
+}
+
+.information__item {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.information__item-name {
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $secondText;
+}
+
+.information__item-info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $basicText;
+}

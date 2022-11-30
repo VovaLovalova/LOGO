@@ -1,0 +1,24 @@
+.order-form__title {
+    margin-bottom: 10px;
+}
+
+.order-form__account {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.order-form__account-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $secondText;
+    margin-right: 5px;
+}
+
+.order-form__account-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $basicText;
+}

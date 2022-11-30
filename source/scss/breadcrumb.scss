@@ -1,0 +1,34 @@
+.breadcrumb__list {
+    display: flex;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.breadcrumb__link {
+    color: $secondText;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.breadcrumb__link:not(.breadcrumb__link--current) {
+
+    &::before {
+        position: absolute;
+        content: "/";
+        color: $secondText;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 24px;
+        top: 0;
+        right: -38px;
+    }
+}
+
+.breadcrumb__link--current {
+    color: $basicText;
+}
+

@@ -9,7 +9,7 @@
     <title>LOGO / Оформление заказа</title>
 </head>
 <body class="page-body">
-    <header class="main-header"></header>
+    <header class="main-header">
 
         <div class="main-header__box header-box">
             <a class="header-box__logo" href="#">
@@ -57,7 +57,7 @@
                 </li>
             </ul>
         </nav>
-
+    </header>
 
     <main class="main-container">
         <section class="breadcrumb">
@@ -65,128 +65,161 @@
                 <li class="breadcrumb__item">
                     <a class="breadcrumb__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumb__item breadcrumb__item--current">Оформление заказа</li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link breadcrumb__link--current">Оформление заказа</a>
+                </li>
               </ul>
         </section>
         <section class="order-form">
             <h1 class="order-form__title">Оформление заказа</h1>
-            <p class="order-form__account">Усть аккаунт?</p>
-            <a class="order-form__account-link" href="#">Войти</a>
-            <form class="form">
+            <div class="order-form__account">
+                <p class="order-form__account-text">Есть аккаунт?</p>
+                <a class="order-form__account-link" href="#">Войти</a>
+            </div>
+            <form class="form" action="" method="post">
                 <div class="goods">
                     <h2 class="goods__title">3 товара на сумму 25 000 ₽</h2>
-                    <div class="goods__item item">
-                        <h3 class="item__title">Утепленная стеганная куртка женская Top Hills</h3>
-                        <img class="item__img" src="./img/jacket.jpg" alt="Утепленная стеганная куртка женская Top Hills" width="90" height="111">
-                        <div class="item__information information">
-                            <p class="information__code">Артикул</p>
-                            <p class="information__number">512-05</p>
-                            <p class="information__type">Сезон</p>
-                            <p class="information__season">Осень-зима</p>
-                        </div>
-                        <fieldset class="item__form settings">
-                            <ul class="settings__list size">
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="xs" value="xs">
-                                    <label class="size__label" for="xs">XS</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="s" value="s">
-                                    <label class="size__label" for="s">S</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="m" value="m" checked>
-                                    <label class="size__label" for="m">M</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="l" value="l">
-                                    <label class="size__label" for="l">L</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="xl" value="xl">
-                                    <label class="size__label" for="xl">XL</label>
-                                </li>
-                            </ul>
 
-                            <ul class="settings__list color">
-                                <li class="color__item">
-                                    <input class="color__choise" type="radio" name="color" id="black" value="black" checked>
-                                    <label class="color__label" for="black">black</label>
-                                </li>
-                                <li class="color__item">
-                                    <input class="color__choise" type="radio" name="color" id="blue" value="blue">
-                                    <label class="color__label" for="blue">blue</label>
-                                </li>
-                                <li class="color__item">
-                                    <input class="color__choise" type="radio" name="color" id="brown" value="brown">
-                                    <label class="color__label" for="brown">brown</label>
-                                </li>
-                            </ul>
-                        </fieldset>
+                    <div class="goods__item item">
+                        <div class="item__main-info">
+                            <img class="item__img" src="./img/jacket@2x.jpg" alt="Утепленная стеганная куртка женская Top Hills" width="90" height="111">
+                            <h3 class="item__title">Утепленная стеганная куртка женская Top Hills</h3>
+                        </div>
+                        <div class="item__information information">
+                            <div class="information__item">
+                                <p class="information__item-name">Артикул</p>
+                                <p class="information__item-info">512-05</p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-name">Сезон</p>
+                                <p class="information__item-info">Осень-зима</p>
+                            </div>
+                        </div>
+                        <div class="item__form settings">
+                            <fieldset>
+                                <ul class="settings__list size-list">
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="xs" value="xs">
+                                        <label class="size-list__label" for="xs">XS</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="s" value="s">
+                                        <label class="size-list__label" for="s">S</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="m" value="m" checked>
+                                        <label class="size-list__label" for="m">M</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="l" value="l">
+                                        <label class="size-list__label" for="l">L</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="xl" value="xl">
+                                        <label class="size-list__label" for="xl">XL</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <ul class="settings__list color-list">
+                                    <li class="color-list__item">
+                                        <input class="color-list__choise" type="radio" name="color" id="black" value="black" checked>
+                                        <label class="color-list__label color-list__label--black" for="black">
+                                            <span class="visually-hidden">black</span>
+                                        </label>
+                                    </li>
+                                    <li class="color-list__item">
+                                        <input class="color-list__choise" type="radio" name="color" id="blue" value="blue">
+                                        <label class="color-list__label color-list__label--blue" for="blue">
+                                            <span class="visually-hidden">blue</span>
+                                        </label>
+                                    </li>
+                                    <li class="color-list__item">
+                                        <input class="color-list__choise" type="radio" name="color" id="brown" value="brown">
+                                        <label class="color-list__label color-list__label--brown" for="brown">
+                                            <span class="visually-hidden">brown</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+
                         <div class="item__count count">
                             <div class="count__price price">
                                 <p class="price__before">12 000 ₽</p>
                                 <p class="price__after">10 000 ₽</p>
                             </div>
+                            <div class="count__amount amount">
+                                <button type="button">-</button>
+                                <output class="amount__field">2</output>
+                                <button type="button">+</button>
+                            </div>
                             <div class="count__total price">
                                 <p class="price__before">24 000 ₽</p>
                                 <p class="price__after">20 000 ₽</p>
                             </div>
-                            <div class="count__amount amount">
-                                
-                            </div>
                         </div>
-                        <button class="item__delete-button">X</button>
+                        <button type="button" class="item__delete-button"></button>
                     </div>
 
                     <div class="goods__item item-deleted">
                         <div class="item-deleted__container">
-                            <p class="item-deleted__text">Товар Наименование товара был удален из корзины.</p>
-                            <button class="item-deleted__button delete-button">X</button>
-                            <button class="item-deleted__button recover-button">Восстановить</button>
+                            <p class="item-deleted__text">Товар <span class="item-deleted__name">Наименование товара</span> был удален из корзины.</p>
+                            <button type="button" class="item-deleted__delete-button"></button>
+                            <button type="button" class="item-deleted__recover-button">Восстановить</button>
                         </div>
                     </div>
 
-                    <div class="goods__item item">
-                        <h3 class="item__title">Вязанная шапка Zolla</h3>
-                        <img class="item__img" src="./img/hat.jpg" alt="Вязанная шапка Zolla" width="90" height="111">
-                        <div class="item__information information">
-                            <p class="information__code">Артикул</p>
-                            <p class="information__number">891-256</p>
-                            <p class="information__type">Сезон</p>
-                            <p class="information__season">Демисезон</p>
+                    <!-- <div class="goods__item item">
+                        <div class="item__main-info">
+                            <img class="item__img" src="./img/hat.jpg" alt="Вязанная шапка Zolla" width="90" height="111">
+                            <h3 class="item__title">Вязанная шапка Zolla</h3>
                         </div>
-                        <fieldset class="item__form settings">
-                            <ul class="settings__list size">
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="xs" value="xs">
-                                    <label class="size__label" for="xs">XS</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="s" value="s" checked>
-                                    <label class="size__label" for="s">S</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="m" value="m">
-                                    <label class="size__label" for="m">M</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="l" value="l">
-                                    <label class="size__label" for="l">L</label>
-                                </li>
-                                <li class="size__item">
-                                    <input class="size__choise" type="radio" name="size" id="xl" value="xl">
-                                    <label class="size__label" for="xl">XL</label>
-                                </li>
-                            </ul>
-
-                            <ul class="settings__list color">
-                                <li class="color__item">
-                                    <input class="color__choise" type="radio" name="color" id="black" value="black" checked>
-                                    <label class="color__label" for="black">black</label>
-                                </li>
-                            </ul>
-                        </fieldset>
+                        <div class="item__information information">
+                            <div class="information__item">
+                                <p class="information__item-name">Артикул</p>
+                                <p class="information__item-info">891-256</p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-name">Сезон</p>
+                                <p class="information__item-info">Демисезон</p>
+                            </div>
+                        </div>
+                        <div class="item__form settings">
+                            <fieldset>
+                                <ul class="settings__list size-list">
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="xs" value="xs">
+                                        <label class="size-list__label" for="xs">XS</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="s" value="s">
+                                        <label class="size-list__label" for="s">S</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="m" value="m" checked>
+                                        <label class="size-list__label" for="m">M</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="l" value="l">
+                                        <label class="size-list__label" for="l">L</label>
+                                    </li>
+                                    <li class="size-list__item">
+                                        <input class="size-list__choise" type="radio" name="size" id="xl" value="xl">
+                                        <label class="size-list__label" for="xl">XL</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                    <ul class="settings__list color-list">
+                                        <li class="color-list__item">
+                                            <input class="color-list__choise" type="radio" name="color" id="black" value="black" checked>
+                                            <label class="color-list__label" for="black">black</label>
+                                        </li>
+                                    </ul>
+                            </fieldset>
+                        </div>
                         <div class="item__count count">
                             <div class="count__price price">
                                 <p class="price__before"></p>
@@ -201,31 +234,32 @@
                             </div>
                         </div>
                         <button class="item__button delete-button">X</button>
-                    </div>
+                    </div> -->
+
                 </div>
 
                 <div class="contacts">
                     <h2 class="contacts__title">Контактные данные</h2>
                     <fieldset class="contacts__form">
-                        <div class="contacts__name-container">
-                            <span class="name hidden">Имя</span>
-                            <input class="contacts__name" type="text" name="name" placeholder="Имя" value="Александр" required>
+                        <div class="contacts__container">
+                            <span class="contacts__name contacts__name--name hidden">Имя</span>
+                            <input class="contacts__field contacts__field--name" type="text" name="name" placeholder="Имя" value="Александр" required>
                         </div>
-                        <div class="contacts__surname-container">
-                            <span class="surname hidden">Фамилия</span>
-                            <input class="contacts__surname" type="text" name="surname" placeholder="Фамилия" required>
+                        <div class="contacts__container">
+                            <span class="contacts__name contacts__name--surname hidden">Фамилия</span>
+                            <input class="contacts__field contacts__field--surname" type="text" name="surname" placeholder="Фамилия" required>
                         </div>
-                        <div class="contacts__tel-container">
-                            <span class="tel hidden">Телефон</span>
-                            <input class="contacts__tel" type="tel" name="tel" pattern="+7[0-9]{3}-[0-9]{3} [0-9]{4}" placeholder="Телефон" required>
+                        <div class="contacts__container">
+                            <span class="contacts__name contacts__name--tel hidden">Телефон</span>
+                            <input class="contacts__field contacts__field--tel" type="tel" name="tel" pattern="+7[0-9]{3}-[0-9]{3} [0-9]{4}" placeholder="Телефон" required>
                         </div>
-                        <div class="contacts__email-container">
-                            <span class="email hidden">Email</span>
-                            <input class="contacts__email" type="email" name="email" placeholder="Email" required>
+                        <div class="contacts__container">
+                            <span class="contacts__name contacts__name--email hidden">Email</span>
+                            <input class="contacts__field contacts__field--email" type="email" name="email" placeholder="Email" required>
                         </div>
-                        <div class="contacts__address-container">
-                            <span class="addres hidden">Адрес</span>
-                            <input class="contacts__address" type="text" name="address" placeholder="Адрес" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required>
+                        <div class="contacts__container">
+                            <span class="contacts__name contacts__name--addres hidden">Адрес доставки</span>
+                            <textarea class="contacts__field contacts__field--address" placeholder="Адрес доставки" name="address" rows="2" required>г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
                             <div class="contacts__address-map">Тут будет карта</div>
                         </div>
                     </fieldset>

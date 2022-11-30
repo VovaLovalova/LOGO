@@ -1,0 +1,33 @@
+.size-list {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.size-list__item {
+    position: relative;
+    margin-right: 9px;
+}
+
+.size-list__choise {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.size-list__label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: $secondBgColor;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 7.5px;
+}
+
+.size-list__choise:checked + .size-list__label {
+    background-color: black;
+    color: white;
+}

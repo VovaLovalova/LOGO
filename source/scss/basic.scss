@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: Helvetica, sans-serif;
-    color: $basicText;
+    font-style: normal;
     background-color: $basicBgColor;
     max-width: $mobile;
     margin: 0 auto;
@@ -30,15 +30,19 @@ ul, ol {
 }
 
 h1 {
-    @include h1Font;
+    @include h1FontMobile;
 }
 
 h2 {
-    @include h2Font;
+    @include h2FontMobile;
 }
 
 h3 {
-    @include h3Font;
+    @include h3FontMobile;
+}
+
+fieldset {
+    border: none;
 }
 
 .hidden {

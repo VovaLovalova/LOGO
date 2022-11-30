@@ -1,0 +1,55 @@
+.item {
+    border-top: 0.5px solid #C8C8C8;
+    border-bottom: 0.5px solid #C8C8C8;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.item__main-info {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.item__img {
+    margin-right: 12px;
+}
+
+.item__title {
+    padding-right: 26px;
+}
+
+.item__delete-button {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 18.5px;
+        height: 1.5px;
+        background-color: black;
+        transform: rotate(45deg);
+        top: 5px;
+        right: -2px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 18.5px;
+        height: 1.5px;
+        background-color: black;
+        transform: rotate(-45deg);
+        top: 5px;
+        right: -2px;
+    }
+
+}

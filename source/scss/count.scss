@@ -1,0 +1,10 @@
+.count {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    column-gap: 8px;
+}
+
+.count__amount {
+    grid-column: 2 / 3;
+}
+
