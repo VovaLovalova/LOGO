@@ -11,6 +11,16 @@
     cursor: pointer;
 }
 
+.form__button:hover {
+    background-color: #6E6E6E;
+    transition: 0.3sec;
+}
+
+.form__button:disabled {
+    color: #6E6E6E;
+    background-color: #C8C8C8;
+}
+
 .form__disclaimer {
     font-weight: 400;
     font-size: 14px;
