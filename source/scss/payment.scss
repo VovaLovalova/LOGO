@@ -1,0 +1,52 @@
+.payment {
+    margin-bottom: 40px;
+}
+
+.payment__title {
+    margin-bottom: 24px;
+}
+
+.payment-type__item {
+    position: relative;
+}
+
+.payment-type__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.payment-type__label {
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.payment-type__label::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    top: 4px;
+    left: 4px;
+}
+
+.payment-type__choise {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.payment-type__choise:checked + .payment-type__label::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border: 1px solid $secondText;
+    border-radius: 50%;
+    background-color: transparent;
+    top: -2px;
+    left: -2px;
+}

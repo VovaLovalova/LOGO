@@ -550,3 +550,289 @@ fieldset {
   left: 16px;
   padding: 4px;
 }
+
+.contacts__address-map {
+  width: 288px;
+  height: 220px;
+  border: 1px solid black;
+}
+
+.payment {
+  margin-bottom: 40px;
+}
+
+.payment__title {
+  margin-bottom: 24px;
+}
+
+.payment-type__item {
+  position: relative;
+}
+
+.payment-type__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.payment-type__label {
+  margin-left: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.payment-type__label::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  top: 4px;
+  left: 4px;
+}
+
+.payment-type__choise {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.payment-type__choise:checked + .payment-type__label::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border: 1px solid #6e6e6e;
+  border-radius: 50%;
+  background-color: transparent;
+  top: -2px;
+  left: -2px;
+}
+
+.comments {
+  margin-bottom: 40px;
+}
+
+.comments__title {
+  margin-bottom: 24px;
+}
+
+.comments__field {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 4px;
+  border: 2px solid #8F8F8F;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6e6e6e;
+  resize: none;
+  overflow: hidden;
+}
+
+.comments__counting {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6e6e6e;
+  margin-left: 16px;
+}
+
+.total {
+  border: 2px solid #6e6e6e;
+  padding: 24px 16px;
+}
+
+.total-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.total-container {
+  border-bottom: 1px solid #C8C8C8;
+  margin-bottom: 12px;
+}
+
+.total__delivery-terms {
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.total__price {
+  margin-bottom: 12px;
+}
+
+.total__price-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__price-count {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__discount {
+  margin-bottom: 8px;
+}
+
+.total__discount-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__discont-count {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #D92C2C;
+}
+
+.total__sale {
+  margin-bottom: 8px;
+}
+
+.total__sale-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.total__sale-count {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D92C2C;
+}
+
+.total__promo {
+  margin-bottom: 12px;
+}
+
+.total__promo-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.total__promo-count {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D92C2C;
+}
+
+.total__delivery {
+  margin-bottom: 12px;
+}
+
+.total__delivery-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__delivery-count {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__delivery-terms {
+  margin-bottom: 12px;
+}
+
+.total__delivery-switch {
+  margin-bottom: 10px;
+}
+
+.total__delivery-terms-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total__delivery-terms-disclamer {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6e6e6e;
+  margin-bottom: 12px;
+}
+
+.total__endprice {
+  margin-bottom: 12px;
+}
+
+.total__endprice-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.total__endprice-count {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.total__endprice-promo {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #8F8F8F;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6e6e6e;
+}
+
+.form__button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 15px 62px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.form__disclaimer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+.form__link {
+  color: #6e6e6e;
+  text-decoration: underline;
+}
+
+.main-footer {
+  height: 38px;
+  background-color: #ffffff;
+}

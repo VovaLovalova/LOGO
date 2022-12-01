@@ -171,7 +171,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="goods__item item">
+                    <div class="goods__item item">
                         <div class="item__main-info">
                             <img class="item__img" src="./img/hat.jpg" alt="Вязанная шапка Zolla" width="90" height="111">
                             <h3 class="item__title">Вязанная шапка Zolla</h3>
@@ -234,7 +234,7 @@
                             </div>
                         </div>
                         <button class="item__button delete-button">X</button>
-                    </div> -->
+                    </div>
 
                 </div>
 
@@ -260,7 +260,8 @@
                         <div class="contacts__container">
                             <span class="contacts__name contacts__name--addres hidden">Адрес доставки</span>
                             <textarea class="contacts__field contacts__field--address" placeholder="Адрес доставки" name="address" rows="2" required>г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
-                            <div class="contacts__address-map">Тут будет карта</div>
+                            <div class="contacts__address-map">Карта
+                            </div>
                         </div>
                     </fieldset>
                 </div>
@@ -287,46 +288,57 @@
 
                 <div class="comments">
                     <h2 class="comments__title">Комментарий к заказу</h2>
-                    <textarea class="comments__field" name="comments" placeholder="Комментарий к заказу" rows="5"></textarea>
-                    <span class="comments__counting">Тут будет счетчик</span>
+                    <textarea class="comments__field" name="comments" maxlength="142" placeholder="Комментарий к заказу" rows="5"></textarea>
+                    <p class="comments__counting">Использовано 0/142 символов</p>
                 </div>
 
                 <div class="total">
                     <div class="total-container">
-                        <div class="total__price">
+                        <div class="total__price total-row">
                             <p class="total__price-text">Товары</p>
                             <p class="total__price-count">24 500 ₽</p>
                         </div>
-                        <div class="total__discount">
+
+                        <div class="total__discount total-row">
                             <p class="total__discount-text">Скидка</p>
                             <p class="total__discont-count">- 4 500 ₽</p>
                         </div>
-                        <div class="total__sale">
+
+                        <div class="total__sale total-row">
                             <p class="total__sale-text">Акции</p>
                             <p class="total__sale-count">- 4 000 ₽</p>
                         </div>
-                        <div class="total__promo">
+
+                        <div class="total__promo total-row">
                             <p class="total__promo-text">Промокод</p>
                             <p class="total__promo-count">- 500 ₽</p>
                         </div>
-                        <div class="total__delivery">
+
+                        <div class="total__delivery total-row">
                             <p class="total__delivery-text">Доставка</p>
                             <p class="total__delivery-count">200 ₽</p>
                         </div>
+                    </div>
+
                         <div class="total__delivery-terms">
-                            <p class="total__delivery-terms-text">Получить товар со склада</p>
-                            <input class="total__delivery-terms-choise" type="radio" name="delivery" value="warehouse">
+                            <div class="total__delivery-switch total-row">
+                                <p class="total__delivery-terms-text">Получить товар со склада</p>
+                                <input class="total__delivery-terms-choise" type="radio" name="delivery" value="warehouse">
+                            </div>
                             <p class="total__delivery-terms-disclamer">Сроки получения могут измениться</p>
                         </div>
+
                         <div class="total__endprice">
-                            <p class="total__endprice-text">Итого:</p>
-                            <p class="total__endprice-count">20 700 ₽</p>
+                            <div class="total-row">
+                                <p class="total__endprice-text">Итого:</p>
+                                <p class="total__endprice-count">20 700 ₽</p>
+                            </div>
                             <input class="total__endprice-promo" type="text" name="promo-code" placeholder="Введите промокод">
                         </div>
                     
-                    </div>
+
                     <button class="button form__button">Оформить заказ</button>
-                    <span class="form__disclaimer">Нажимая кнопку “Оформить заказ”, Вы соглашаетесь с <a class="link" href="#">политикой конфиденциальности</a>.</span>
+                    <p class="form__disclaimer">Нажимая кнопку “Оформить заказ”, Вы соглашаетесь с <a class="form__link" href="#">политикой конфиденциальности</a>.</p>
                 </div>
             </form>
         </section>

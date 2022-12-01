@@ -1,0 +1,160 @@
+.total {
+    border: 2px solid $secondText;
+    padding: 24px 16px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-container {
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 12px;
+}
+
+.total__delivery-terms {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.total__price {
+    margin-bottom: 12px;
+}
+
+.total__price-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__price-count {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__discount {
+    margin-bottom: 8px;
+}
+
+.total__discount-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__discont-count {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color:  #D92C2C;
+}
+
+.total__sale {
+    margin-bottom: 8px;
+}
+
+.total__sale-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $basicText;
+}
+
+.total__sale-count {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #D92C2C;
+}
+
+.total__promo {
+    margin-bottom: 12px;
+}
+
+.total__promo-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $basicText;
+}
+
+.total__promo-count {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #D92C2C;
+}
+
+.total__delivery {
+    margin-bottom: 12px;
+}
+
+.total__delivery-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__delivery-count {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__delivery-terms {
+    margin-bottom: 12px;
+}
+
+.total__delivery-switch {
+    margin-bottom: 10px;
+}
+
+.total__delivery-terms-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $basicText;
+}
+
+.total__delivery-terms-disclamer {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $secondText;
+    margin-bottom: 12px;
+}
+
+.total__endprice {
+    margin-bottom: 12px;
+}
+
+.total__endprice-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $basicText;
+    margin-bottom: 12px;
+}
+
+.total__endprice-count {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $basicText;
+}
+
+.total__endprice-promo {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #8F8F8F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $secondText;
+}

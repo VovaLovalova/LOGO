@@ -1,0 +1,30 @@
+.comments {
+    margin-bottom: 40px;
+}
+
+.comments__title {
+    margin-bottom: 24px; 
+}
+
+.comments__field {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 4px;
+    border: 2px solid #8F8F8F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $secondText;
+    resize: none;
+    overflow: hidden;
+}
+
+.comments__counting {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $secondText;
+    margin-left: 16px;
+}
