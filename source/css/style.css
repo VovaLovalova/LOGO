@@ -423,13 +423,80 @@ fieldset {
 }
 
 .amount {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  width: 146px;
+  height: 42px;
+  background-color: #F1F1F1;
+  border-radius: 5px;
 }
 
 .amount__field {
-  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  top: 12px;
+  left: 66px;
+}
+
+.amount__button {
+  position: absolute;
+  background-color: transparent;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+#button-minus {
+  top: 14px;
+  left: 14px;
+}
+
+.amount__button--minus::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background-color: black;
+}
+
+#button-plus {
+  top: 14px;
+  left: 124px;
+}
+
+.amount__button--plus::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background-color: black;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.amount__button--plus::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background-color: black;
+}
+
+.amount__button--minus-disabled::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background-color: #C8C8C8;
 }
 
 .price__before {
