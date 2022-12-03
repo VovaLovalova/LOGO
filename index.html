@@ -103,7 +103,8 @@
                                 <fieldset>
                                     <ul class="settings__list size-list">
                                         <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="xs" value="xs">
+                                            <input class="size-list__choise" type="radio" name="size1" id="xs"
+                                                value="xs">
                                             <label class="size-list__label" for="xs">XS</label>
                                         </li>
                                         <li class="size-list__item">
@@ -111,7 +112,8 @@
                                             <label class="size-list__label" for="s">S</label>
                                         </li>
                                         <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="m" value="m" checked>
+                                            <input class="size-list__choise" type="radio" name="size1" id="m" value="m"
+                                                checked>
                                             <label class="size-list__label" for="m">M</label>
                                         </li>
                                         <li class="size-list__item">
@@ -155,17 +157,31 @@
 
                             <div class="item__count count">
                                 <div class="count__price price">
-                                    <p class="price__before" id="price-for-one-before">12 000 ₽</p>
-                                    <p class="price__after" id="price-for-one-after">10 000 ₽</p>
+                                    <div class="price-row">
+                                        <p class="price__before" id="price-for-one-before">12 000</p>
+                                        <span class="price__currency-before">₽</span>
+                                    </div>
+                                    <div class="price-row">
+                                        <p class="price__after" id="price-for-one-after">10 000</p>
+                                        <span class="price__currency-after">₽</span>
+                                    </div>
                                 </div>
                                 <div class="count__amount amount">
-                                    <button class="amount__button amount__button--minus" type="button" id="button-minus"></button>
+                                    <button class="amount__button amount__button--minus" type="button"
+                                        id="button-minus"></button>
                                     <output class="amount__field" id="amount-output">2</output>
-                                    <button class="amount__button amount__button--plus" type="button" id="button-plus"></button>
+                                    <button class="amount__button amount__button--plus" type="button"
+                                        id="button-plus"></button>
                                 </div>
                                 <div class="count__total price">
-                                    <p class="price__before" id="price-total-before">24 000 ₽</p>
-                                    <p class="price__after" id="price-total-after">20 000 ₽</p>
+                                    <div class="price-row">
+                                        <p class="price__before" id="price-total-before">24 000</p>
+                                        <span class="price__currency-before">₽</span>
+                                    </div>
+                                    <div class="price-row">
+                                        <p class="price__after" id="price-total-after">20 000</p>
+                                        <span class="price__currency-after">₽</span>
+                                    </div>
                                 </div>
                             </div>
                             <button type="button" class="item__delete-button"></button>
@@ -180,7 +196,7 @@
                             </div>
                         </li>
 
-                        <li class="goods__item item">
+                        <!-- <li class="goods__item item">
                             <div class="item__main-info">
                                 <img class="item__img" src="./img/hat.jpg" alt="Вязанная шапка Zolla" width="90"
                                     height="111">
@@ -200,11 +216,13 @@
                                 <fieldset>
                                     <ul class="settings__list size-list">
                                         <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size2" id="xs" value="xs">
+                                            <input class="size-list__choise" type="radio" name="size2" id="xs"
+                                                value="xs">
                                             <label class="size-list__label" for="xs">XS</label>
                                         </li>
                                         <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size2" id="s" value="s" checked>
+                                            <input class="size-list__choise" type="radio" name="size2" id="s" value="s"
+                                                checked>
                                             <label class="size-list__label" for="s">S</label>
                                         </li>
                                         <li class="size-list__item">
@@ -240,9 +258,11 @@
                                     <p class="price__after">500 ₽</p>
                                 </div>
                                 <div class="count__amount amount">
-                                    <button class="amount__button amount__button--minus" type="button" id="button-minus"></button>
+                                    <button class="amount__button amount__button--minus" type="button"
+                                        id="button-minus"></button>
                                     <output class="amount__field" id="amount-output">1</output>
-                                    <button class="amount__button amount__button--plus" type="button" id="button-plus"></button>
+                                    <button class="amount__button amount__button--plus" type="button"
+                                        id="button-plus"></button>
                                 </div>
                                 <div class="count__total price">
                                     <p class="price__before"></p>
@@ -250,7 +270,7 @@
                                 </div>
                             </div>
                             <button type="button" class="item__delete-button"></button>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 

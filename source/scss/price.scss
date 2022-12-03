@@ -1,4 +1,8 @@
-.price__before {
+.price {
+    min-width: 64px;
+}
+
+.price__before, .price__currency-before {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -6,9 +10,19 @@
     color: $secondText;
 }
 
-.price__after {
+.price__after, .price__currency-after {
+    display: block;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
     color: $basicText;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+}
+
+.price__after, .price__before {
+    margin-right: 4px;
 }

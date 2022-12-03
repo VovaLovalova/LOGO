@@ -409,8 +409,8 @@ fieldset {
 .count {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 8px 50% 8px 25%;
-  grid-template-columns: 25% 50% 25%;
+  -ms-grid-columns: 63px 8px 146px 8px 63px;
+  grid-template-columns: 63px 146px 63px;
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
@@ -448,7 +448,7 @@ fieldset {
 }
 
 #button-minus {
-  top: 14px;
+  top: 16px;
   left: 14px;
 }
 
@@ -463,8 +463,8 @@ fieldset {
 }
 
 #button-plus {
-  top: 14px;
-  left: 124px;
+  top: 16px;
+  left: 120px;
 }
 
 .amount__button--plus::after {
@@ -499,7 +499,11 @@ fieldset {
   background-color: #C8C8C8;
 }
 
-.price__before {
+.price {
+  min-width: 64px;
+}
+
+.price__before, .price__currency-before {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -507,11 +511,25 @@ fieldset {
   color: #6e6e6e;
 }
 
-.price__after {
+.price__after, .price__currency-after {
+  display: block;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
   color: #000000;
+}
+
+.price-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price__after, .price__before {
+  margin-right: 4px;
 }
 
 .item-deleted {
