@@ -4,6 +4,10 @@
     height: 42px;
     background-color: #F1F1F1;
     border-radius: 5px;
+
+    @media (min-width: $desktop) {
+        width: 153px;
+    }
 }
 
 .amount__field {

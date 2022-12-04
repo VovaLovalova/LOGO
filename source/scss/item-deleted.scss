@@ -4,6 +4,11 @@
     padding: 12px 32px 12px 8px;
     position: relative;
     margin-bottom: 16px;
+
+    @media (min-width: $desktop) {
+        width: 760px;
+        display: flex;
+    }
 }
 
 .item-deleted__text {
@@ -15,6 +20,11 @@
 
     .item-deleted__name {
         font-weight: 600;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 25px;
     }
 }
 

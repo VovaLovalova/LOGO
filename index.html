@@ -12,53 +12,83 @@
 
 <body class="page-body">
     <header class="main-header">
+        <div class="main-header__container">
 
-        <div class="main-header__box header-box">
-            <a class="header-box__logo" href="#">
-                <img class="header-box__logo-image" src="./img/logo.svg" width="100" height="22" alt="LOGO">
-            </a>
-            <div class="header-box__buttons">
-                <button class="header-box__user-button">
-                    <img src="./img/bag.svg" width="28" alt="Иконка меню Пользователя">
-                    <span class="visually-hidden">Открыть меню Пользователя</span>
-                </button>
-                <button class="header-box__nav-button">
-                    <img src="./img/burger_menu.svg" width="32" alt="Иконка меню Навигации">
-                    <span class="visually-hidden">Открыть меню навигации</span>
-                </button>
+            <div class="main-header__box header-box">
+                <a class="header-box__logo" href="#">
+                    <img class="header-box__logo-image" src="./img/logo.svg" width="100" height="22" alt="LOGO">
+                </a>
+                <div class="header-box__buttons">
+                    <button class="header-box__user-button">
+                        <img src="./img/basket.svg" width="28" alt="Иконка меню Пользователя">
+                        <span class="visually-hidden">Открыть меню Пользователя</span>
+                    </button>
+                    <button class="header-box__nav-button">
+                        <img src="./img/burger_menu.svg" width="32" alt="Иконка меню Навигации">
+                        <span class="visually-hidden">Открыть меню навигации</span>
+                    </button>
+                </div>
             </div>
+
+            <nav class="main-header__nav main-nav">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="#">Каталог</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="#">О компании</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="#">Магазины</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="main-header__user-nav user-nav">
+                <ul class="user-nav__list user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__link user-list__link--search" href="#">
+                            <p class="user-list__link-text">Поиск</p>
+                            <img class="user-list__link-img user-list__link-img--search" src="./img/search-user.svg"
+                                alt="Поиск">
+                            <div class="user-list__link-info-container" id="info-container">
+                                <output class="user-list__link-info" id="info-text"></output>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-list__item">
+                        <a class="user-list__link user-list__link--user" href="#">
+                            <p class="user-list__link-text">Пользователь</p>
+                            <img class="user-list__link-img user-list__link-img--user" src="./img/user.svg"
+                                alt="Пользователь">
+                            <div class="user-list__link-info-container" id="info-container">
+                                <output class="user-list__link-info" id="info-text"></output>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-list__item">
+                        <a class="user-list__link user-list__link--favorite" href="#">
+                            <p class="user-list__link-text">Нравится</p>
+                            <img class=" user-list__link-img user-list__link-img--favorite" src="./img/favorite.svg"
+                                alt="Нравится">
+                            <div class="user-list__link-info-container" id="info-container">
+                                <output class="user-list__link-info" id="info-text">8</output>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="user-list__item">
+                        <a class="user-list__link user-list__link--bag" href="#">
+                            <p class="user-list__link-text">Корзина</p>
+                            <img class="user-list__link-img user-list__link-img--basket" src="./img/bag.svg"
+                                alt="Корзина">
+                            <div class="user-list__link-info-container" id="info-container">
+                                <output class="user-list__link-info" id="info-text">4</output>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="main-header__nav main-nav">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Каталог</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">О компании</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Магазины</a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav class="main-header__user-nav user-nav">
-            <ul class="user-nav__list user-list">
-                <li class="user-list__item">
-                    <a class="user-list__link" href="#">Поиск</a>
-                </li>
-                <li class="user-list__item">
-                    <a class="user-list__link" href="#">Пользователь</a>
-                </li>
-                <li class="user-list__item">
-                    <a class="user-list__link" href="#">Нравится</a>
-                </li>
-                <li class="user-list__item">
-                    <a class="user-list__link" href="#">Корзина</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="main-container">
@@ -73,10 +103,12 @@
             </ul>
         </section>
         <section class="order-form">
-            <h1 class="order-form__title">Оформление заказа</h1>
-            <div class="order-form__account">
-                <p class="order-form__account-text">Есть аккаунт?</p>
-                <a class="order-form__account-link" href="#">Войти</a>
+            <div class="order-form__title-container">
+                <h1 class="order-form__title">Оформление заказа</h1>
+                <div class="order-form__account">
+                    <p class="order-form__account-text">Есть аккаунт?</p>
+                    <a class="order-form__account-link" href="#">Войти</a>
+                </div>
             </div>
             <form class="form" action="" method="post">
                 <div class="goods">
@@ -84,85 +116,88 @@
                     <ul class="goods__list">
 
                         <li class="goods__item item">
+
+                            <img class="item__img" src="./img/jacket@2x.jpg"
+                                alt="Утепленная стеганная куртка женская Top Hills">
+
                             <div class="item__main-info">
-                                <img class="item__img" src="./img/jacket@2x.jpg"
-                                    alt="Утепленная стеганная куртка женская Top Hills" width="90" height="111">
                                 <h3 class="item__title">Утепленная стеганная куртка женская Top Hills</h3>
-                            </div>
-                            <div class="item__information information">
-                                <div class="information__item">
-                                    <p class="information__item-name">Артикул</p>
-                                    <p class="information__item-info">512-05</p>
+                                <div class="item__information information">
+                                    <div class="information__item">
+                                        <p class="information__item-name">Артикул</p>
+                                        <p class="information__item-info">512-05</p>
+                                    </div>
+                                    <div class="information__item">
+                                        <p class="information__item-name">Сезон</p>
+                                        <p class="information__item-info">Осень-зима</p>
+                                    </div>
                                 </div>
-                                <div class="information__item">
-                                    <p class="information__item-name">Сезон</p>
-                                    <p class="information__item-info">Осень-зима</p>
+                                <div class="item__form settings">
+                                    <fieldset>
+                                        <ul class="settings__list size-list">
+                                            <li class="size-list__item">
+                                                <input class="size-list__choise" type="radio" name="size1" id="xs"
+                                                    value="xs">
+                                                <label class="size-list__label" for="xs">XS</label>
+                                            </li>
+                                            <li class="size-list__item">
+                                                <input class="size-list__choise" type="radio" name="size1" id="s"
+                                                    value="s">
+                                                <label class="size-list__label" for="s">S</label>
+                                            </li>
+                                            <li class="size-list__item">
+                                                <input class="size-list__choise" type="radio" name="size1" id="m"
+                                                    value="m" checked>
+                                                <label class="size-list__label" for="m">M</label>
+                                            </li>
+                                            <li class="size-list__item">
+                                                <input class="size-list__choise" type="radio" name="size1" id="l"
+                                                    value="l">
+                                                <label class="size-list__label" for="l">L</label>
+                                            </li>
+                                            <li class="size-list__item">
+                                                <input class="size-list__choise" type="radio" name="size1" id="xl"
+                                                    value="xl">
+                                                <label class="size-list__label" for="xl">XL</label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <ul class="settings__list color-list">
+                                            <li class="color-list__item">
+                                                <input class="color-list__choise" type="radio" name="color1" id="black"
+                                                    value="black" checked>
+                                                <label class="color-list__label color-list__label--black" for="black">
+                                                    <span class="visually-hidden">black</span>
+                                                </label>
+                                            </li>
+                                            <li class="color-list__item">
+                                                <input class="color-list__choise" type="radio" name="color1" id="blue"
+                                                    value="blue">
+                                                <label class="color-list__label color-list__label--blue" for="blue">
+                                                    <span class="visually-hidden">blue</span>
+                                                </label>
+                                            </li>
+                                            <li class="color-list__item">
+                                                <input class="color-list__choise" type="radio" name="color1" id="brown"
+                                                    value="brown">
+                                                <label class="color-list__label color-list__label--brown" for="brown">
+                                                    <span class="visually-hidden">brown</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
                                 </div>
                             </div>
-                            <div class="item__form settings">
-                                <fieldset>
-                                    <ul class="settings__list size-list">
-                                        <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="xs"
-                                                value="xs">
-                                            <label class="size-list__label" for="xs">XS</label>
-                                        </li>
-                                        <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="s" value="s">
-                                            <label class="size-list__label" for="s">S</label>
-                                        </li>
-                                        <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="m" value="m"
-                                                checked>
-                                            <label class="size-list__label" for="m">M</label>
-                                        </li>
-                                        <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="l" value="l">
-                                            <label class="size-list__label" for="l">L</label>
-                                        </li>
-                                        <li class="size-list__item">
-                                            <input class="size-list__choise" type="radio" name="size1" id="xl"
-                                                value="xl">
-                                            <label class="size-list__label" for="xl">XL</label>
-                                        </li>
-                                    </ul>
-                                </fieldset>
-
-                                <fieldset>
-                                    <ul class="settings__list color-list">
-                                        <li class="color-list__item">
-                                            <input class="color-list__choise" type="radio" name="color1" id="black"
-                                                value="black" checked>
-                                            <label class="color-list__label color-list__label--black" for="black">
-                                                <span class="visually-hidden">black</span>
-                                            </label>
-                                        </li>
-                                        <li class="color-list__item">
-                                            <input class="color-list__choise" type="radio" name="color1" id="blue"
-                                                value="blue">
-                                            <label class="color-list__label color-list__label--blue" for="blue">
-                                                <span class="visually-hidden">blue</span>
-                                            </label>
-                                        </li>
-                                        <li class="color-list__item">
-                                            <input class="color-list__choise" type="radio" name="color1" id="brown"
-                                                value="brown">
-                                            <label class="color-list__label color-list__label--brown" for="brown">
-                                                <span class="visually-hidden">brown</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </fieldset>
-                            </div>
-
                             <div class="item__count count">
                                 <div class="count__price price">
                                     <div class="price-row">
-                                        <p class="price__before" id="price-for-one-before">12 000</p>
+                                        <output class="price__before" id="price-for-one-before">12000</output>
                                         <span class="price__currency-before">₽</span>
                                     </div>
                                     <div class="price-row">
-                                        <p class="price__after" id="price-for-one-after">10 000</p>
+                                        <output class="price__after" id="price-for-one-after">10000</output>
                                         <span class="price__currency-after">₽</span>
                                     </div>
                                 </div>
@@ -175,11 +210,11 @@
                                 </div>
                                 <div class="count__total price">
                                     <div class="price-row">
-                                        <p class="price__before" id="price-total-before">24 000</p>
+                                        <output class="price__before" id="price-total-before">24000</output>
                                         <span class="price__currency-before">₽</span>
                                     </div>
                                     <div class="price-row">
-                                        <p class="price__after" id="price-total-after">20 000</p>
+                                        <output class="price__after" id="price-total-after">20000</output>
                                         <span class="price__currency-after">₽</span>
                                     </div>
                                 </div>
@@ -188,12 +223,10 @@
                         </li>
 
                         <li class="goods__item item-deleted">
-                            <div class="item-deleted__container">
                                 <p class="item-deleted__text">Товар <span class="item-deleted__name">Наименование
                                         товара</span> был удален из корзины.</p>
                                 <button type="button" class="item-deleted__delete-button"></button>
                                 <button type="button" class="item-deleted__recover-button">Восстановить</button>
-                            </div>
                         </li>
 
                         <!-- <li class="goods__item item">
@@ -305,9 +338,7 @@
                             <button class="contacts_address-button" type="button">
                                 <img src="./img/search.svg" width="20" height="20" alt="Поиск">
                             </button>
-                            <div class="contacts__address-map">
-                                <img src="./img/Map.jpg" width="288" height="220" alt="map">
-                            </div>
+                            <div class="contacts__address-map" id="map"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -404,6 +435,9 @@
     </main>
     <footer class="main-footer"></footer>
     <script src="./script/main.js" type="module"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=18210afb-aba8-4820-a6a1-3cbd8c0ae7c5&lang=ru_RU"
+        type="text/javascript">
+        </script>
 </body>
 
 </html>

@@ -5,19 +5,50 @@
     padding-top: 16px;
     position: relative;
     margin-bottom: 16px;
+
+    @media (min-width: $desktop) {
+        padding-bottom: 25px;
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: 130px 197px 371px;
+        column-gap: 20px;
+        justify-content: flex-start;
+        width: 760px;
+    }
 }
 
 .item__main-info {
-    display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .item__img {
-    margin-right: 12px;
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 0;
+    width: 90px;
+    height: 111px;
+
+    @media (min-width: $desktop) {
+        position: static;
+        width: 130px;
+        height: 160px;
+        margin-right: 20px;
+    }
 }
 
 .item__title {
-    padding-right: 26px;
+    margin-left: 102px;
+    margin-bottom: 65px;
+    width: 155px;
+
+    @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 0;
+    margin-bottom: 15px;
+    width: 200px;
+    }
 }
 
 .item__delete-button {

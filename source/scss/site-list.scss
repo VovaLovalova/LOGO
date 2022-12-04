@@ -1,12 +1,29 @@
+.site-list {
+    @media (min-width: $desktop) {
+        display: flex;
+        width: 400px;
+    }
+}
+
 .site-list__item {
     padding: 16px;
     border-bottom: 2px solid $secondBgColor;
     width: $mobile;
     padding: 16px;
     text-align: center;
+
+    @media (min-width: $desktop) {
+    padding: 0;
+    border: none;
+    width: auto;
+    }
 }
 
 .site-list__link {
     padding: 16px auto;
     color: $basicText;
+
+    @media (min-width: $desktop) {
+        margin-right: 40px;
+        }
 }

@@ -6,6 +6,10 @@
 .size-list__item {
     position: relative;
     margin-right: 9px;
+
+    @media (min-width: $desktop) {
+        margin-right: 5px;
+    }
 }
 
 .size-list__choise {

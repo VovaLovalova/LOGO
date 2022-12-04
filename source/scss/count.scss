@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 63px 146px 63px;
     column-gap: 8px;
+    @media (min-width: $desktop) {
+        column-gap: 30px;
+    }
 }
 
 .count__amount {

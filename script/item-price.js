@@ -8,6 +8,20 @@ const buttonPlus = document.querySelector('#button-plus');
 
 const output = document.querySelector('#amount-output');
 
+function getPriceBeforeCount () {
+    let forOneBefore = Number(priceForOneBefore.value);
+    let number = Number(output.value);
+    let totalBefore = forOneBefore * number;
+    priceTotalBefore.value = totalBefore;
+}
+
+function getPriceAfterCount () {
+    let forOneAfter = Number(priceForOneAfter.value);
+    let number = Number(output.value);
+    let totalAfter = forOneAfter * number;
+    priceTotalAfter.value = totalAfter;
+}
+
 function checkOutput () {
     let number = Number(output.value);
     if (number === 1) {
@@ -22,6 +36,8 @@ function onPlusClick () {
     output.value = number;
     buttonMinus.classList.add('amount__button--minus');
     buttonMinus.classList.remove('amount__button--minus-disabled');
+    getPriceBeforeCount();
+    getPriceAfterCount();
 }
 
 function onMinusClick () {
@@ -32,17 +48,14 @@ function onMinusClick () {
         output.value = number;
     }
     checkOutput();
+    getPriceBeforeCount();
+    getPriceAfterCount();
 }
 
+getPriceBeforeCount();
+getPriceAfterCount();
 checkOutput();
 
 buttonMinus.addEventListener('click', onMinusClick);
 
 buttonPlus.addEventListener('click', onPlusClick);
-
-// function getPriceTotalBefore () {
-//     let price = priceForOneBefore.value;
-
-// }
-
-console.log(priceForOneBefore.length);

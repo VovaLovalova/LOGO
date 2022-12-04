@@ -1,0 +1,12 @@
+.main-nav {
+    position: absolute;
+    background-color: $basicBgColor;
+    z-index: 10;
+
+    @media (min-width: $desktop) {
+        position: static;
+        display: block;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
