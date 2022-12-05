@@ -1,6 +1,11 @@
 .total {
     border: 2px solid $secondText;
     padding: 24px 16px;
+
+    @media (min-width: $desktop) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
 
 .total-row {

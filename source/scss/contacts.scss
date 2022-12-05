@@ -2,6 +2,14 @@
     margin-bottom: 40px;
 }
 
+.contacts__form-container {
+    @media (min-width: $desktop) {
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+    }
+}
+
 .contacts__title {
     margin-bottom: 24px;
 }
@@ -36,6 +44,20 @@
     cursor: pointer;
 }
 
+.contacts__input-container {
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 370px 370px;
+        column-gap: 20px;
+    }
+}
+
+.contacts__container--address {
+    @media (min-width: $desktop) {
+        grid-column: 1 / 3;
+    }
+}
+
 .contacts__container {
     position: relative;
 }
@@ -54,5 +76,10 @@
 
 .contacts__address-map {
     width: 288px;
-    height: 220px;;
+    height: 220px;
+
+    @media (min-width: $desktop) {
+        width: 400px;
+        height: 450px;
+    }
 }
